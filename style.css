@@ -129,79 +129,183 @@ button {
     font-weight: 500;
   }
 }
-/* Schedule your post */
-#schedule-your-post{
-  margin-bottom: 50px;
+/* Web List */
+#web-list {
+  padding: 50px 0px;
 }
-#schedule-your-post .container{
+#web-list .web-list-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 60px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+}
+.web-list-wrap li {
+  width: 115px;
+  height: 38px;
+}
+.web-list-wrap li:nth-child(1) {
+  width: 132px;
+}
+.web-list-wrap li:nth-child(2) {
+  height: 30px;
+}
+.web-list-wrap li:nth-child(4) {
+  height: 36px;
+}
+.web-list-wrap li:nth-child(5) {
+  height: 25px;
+}
+.web-list-wrap li img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #web-list {
+    padding: 70px 0px;
+  }
+  #web-list .web-list-wrap {
+    row-gap: 30px;
+    column-gap: 100px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #web-list {
+    padding: 126px 0px;
+  }
+  #web-list .web-list-wrap {
+    column-gap: 104px;
+  }
+}
+
+/* Measure Impressions */
+#measure-impressions .container {
+  padding: 50px 0px 90px 0px;
   display: flex;
   flex-flow: column wrap;
-  row-gap: 20px;
+  row-gap: 30px;
 }
-#schedule-your-post .img-wrap{
+#measure-impressions .img-wrap {
+  width: 90%;
+}
+#measure-impressions .img-wrap img {
   width: 100%;
-  text-align: center;
 }
-#schedule-your-post .img-wrap img{
-  width: 100%;
-}
-#schedule-your-post .content{
+#measure-impressions .content {
   display: flex;
   flex-flow: column wrap;
   row-gap: 15px;
 }
-#schedule-your-post .content ul{
+
+@media only screen and (min-width: 768px) {
+  #measure-impressions .container {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0px 150px 0px;
+    background-image: url("./images/iPhone-bg.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+  #measure-impressions .img-wrap {
+    width: 300px;
+  }
+  #measure-impressions .content {
+    row-gap: 20px;
+    width: 280px;
+  }
+  #measure-impressions .content h3 {
+    flex-flow: row wrap;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #measure-impressions .container{
+    padding: 80px 0px 230px 0px;
+  }
+  #measure-impressions .content {
+    row-gap: 26px;
+    width: 485px;
+  }
+  #measure-impressions .img-wrap {
+    width: 460px;
+  }
+}
+/* Schedule your post */
+#schedule-your-post {
+  margin-bottom: 50px;
+}
+#schedule-your-post .container {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+}
+#schedule-your-post .img-wrap {
+  width: 100%;
+  text-align: center;
+}
+#schedule-your-post .img-wrap img {
+  width: 100%;
+}
+#schedule-your-post .content {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 15px;
+}
+#schedule-your-post .content ul {
   display: flex;
   flex-flow: column wrap;
   row-gap: 10px;
 }
-#schedule-your-post .content ul li{
+#schedule-your-post .content ul li {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   column-gap: 10px;
 }
-#schedule-your-post .content ul li img{
+#schedule-your-post .content ul li img {
   height: 16px;
   width: 16px;
 }
 
 @media only screen and (min-width: 768px) {
-  #schedule-your-post{
+  #schedule-your-post {
     margin-bottom: 90px;
   }
-  #schedule-your-post .container{
+  #schedule-your-post .container {
     flex-flow: row wrap;
     align-items: center;
   }
-  #schedule-your-post .img-wrap{
+  #schedule-your-post .img-wrap {
     order: 2;
     width: 320px;
   }
-  #schedule-your-post .content{
+  #schedule-your-post .content {
     row-gap: 20px;
     width: 300px;
   }
-  #schedule-your-post .content ul{
+  #schedule-your-post .content ul {
     row-gap: 14px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  #schedule-your-post{
+  #schedule-your-post {
     margin-bottom: 150px;
   }
-  #schedule-your-post .container{
+  #schedule-your-post .container {
     align-items: start;
   }
-  #schedule-your-post .img-wrap{
-    width: 699px;
+  #schedule-your-post .img-wrap {
+    width: 670px;
     height: 410px;
   }
-  #schedule-your-post .content{
+  #schedule-your-post .content {
     row-gap: 26px;
-    width: 461px;
+    width: 490px;
   }
-  #schedule-your-post .content ul{
+  #schedule-your-post .content ul {
     row-gap: 17px;
   }
 }
@@ -297,6 +401,7 @@ button {
   display: flex;
   flex-flow: column wrap;
   row-gap: 20px;
+  border-radius: 8px;
 }
 .grow-brand-content h3 {
   color: var(--white);
