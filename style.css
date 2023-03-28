@@ -47,6 +47,7 @@ a {
 /* Common class */
 h3 {
   font-size: 24px;
+  color: var(--deepblue);
 }
 h5 {
   font-size: 16px;
@@ -128,13 +129,87 @@ button {
     font-weight: 500;
   }
 }
+/* Schedule your post */
+#schedule-your-post{
+  margin-bottom: 50px;
+}
+#schedule-your-post .container{
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+}
+#schedule-your-post .img-wrap{
+  width: 100%;
+  text-align: center;
+}
+#schedule-your-post .img-wrap img{
+  width: 100%;
+}
+#schedule-your-post .content{
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 15px;
+}
+#schedule-your-post .content ul{
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 10px;
+}
+#schedule-your-post .content ul li{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 10px;
+}
+#schedule-your-post .content ul li img{
+  height: 16px;
+  width: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  #schedule-your-post{
+    margin-bottom: 90px;
+  }
+  #schedule-your-post .container{
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  #schedule-your-post .img-wrap{
+    order: 2;
+    width: 320px;
+  }
+  #schedule-your-post .content{
+    row-gap: 20px;
+    width: 300px;
+  }
+  #schedule-your-post .content ul{
+    row-gap: 14px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #schedule-your-post{
+    margin-bottom: 150px;
+  }
+  #schedule-your-post .container{
+    align-items: start;
+  }
+  #schedule-your-post .img-wrap{
+    width: 699px;
+    height: 410px;
+  }
+  #schedule-your-post .content{
+    row-gap: 26px;
+    width: 461px;
+  }
+  #schedule-your-post .content ul{
+    row-gap: 17px;
+  }
+}
+
 /* Track any hashtag */
 #track-any-hashtag {
   padding: 40px 0px;
   background-color: var(--pest);
-}
-#track-any-hashtag .heading-wrap {
-  text-align: center;
 }
 #track-any-hashtag .heading-wrap p {
   color: var(--darkpest);
@@ -146,7 +221,6 @@ button {
 #track-any-hashtag .cards-wrap {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
   row-gap: 30px;
 }
 #track-any-hashtag .cards-wrap .card {
@@ -178,6 +252,9 @@ button {
 @media only screen and (min-width: 768px) {
   #track-any-hashtag {
     padding: 55px 0px;
+  }
+  #track-any-hashtag .heading-wrap {
+    text-align: center;
   }
   #track-any-hashtag .cards-wrap {
     flex-flow: row wrap;
