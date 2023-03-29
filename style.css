@@ -1,21 +1,36 @@
-/* Fonts */
+/* 
+==========
+Fonts 
+==========
+*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 
-/* Variable*/
+/* 
+==========
+Variable
+==========
+*/
 :root {
   --white: #ffffff;
   --gray: #d3d6d8;
   --darkgreen: #1d282a;
   --black: #000000;
   --darkpest: #90a3b4;
-  --lightblue: #04aadd;
+  --sky: #04aadd;
+  --darksky: #00a8db;
   --pest: #effbff;
   --darkblue: #005490;
   --deepblue: #034d82;
+  --orange: orange;
   --DM-Sens: "DM Sans", sans-serif;
+  --transition: all 0.3s linear;
 }
 
-/* Global style */
+/* 
+============
+Global style
+============
+*/
 * {
   margin: 0;
   padding: 0;
@@ -41,10 +56,14 @@ p {
 }
 a {
   text-decoration: none;
-  color: var(--lightblue);
+  color: var(--sky);
 }
 
-/* Common class */
+/* 
+============
+Common class 
+============
+*/
 h3 {
   font-size: 24px;
   color: var(--deepblue);
@@ -74,14 +93,19 @@ a {
 }
 button {
   border: none;
+  background: none;
 }
 .common-btn {
-  padding: 14px 24px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--white);
   border-radius: 4px;
 }
 .common-btn a {
-  color: var(--lightblue);
+  color: var(--sky);
 }
 @media only screen and (min-width: 768px) {
   h3 {
@@ -99,11 +123,13 @@ button {
   .common-16,
   a {
     font-size: 15px;
-    font-weight: 400;
   }
   .common-14 {
     font-size: 13px;
-    font-weight: 500;
+  }
+  .common-btn {
+    width: 170px;
+    height: 47px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -122,14 +148,28 @@ button {
   .common-16,
   a {
     font-size: 16px;
-    font-weight: 400;
   }
   .common-14 {
     font-size: 14px;
-    font-weight: 500;
+  }
+  .common-btn {
+    width: 204px;
+    height: 57px;
   }
 }
-/* Web List */
+/* 
+==========
+Header
+==========
+*/
+header{
+  background-color: var(--darksky);
+}
+/* 
+==========
+Web List 
+==========
+*/
 #web-list {
   padding: 50px 0px;
 }
@@ -180,7 +220,11 @@ button {
   }
 }
 
-/* Measure Impressions */
+/* 
+===================
+Measure Impressions 
+===================
+*/
 #measure-impressions .container {
   padding: 50px 0px 90px 0px;
   display: flex;
@@ -222,7 +266,7 @@ button {
   }
 }
 @media only screen and (min-width: 1440px) {
-  #measure-impressions .container{
+  #measure-impressions .container {
     padding: 80px 0px 230px 0px;
   }
   #measure-impressions .content {
@@ -233,7 +277,12 @@ button {
     width: 460px;
   }
 }
-/* Schedule your post */
+
+/*
+==================
+Schedule your post
+==================
+*/
 #schedule-your-post {
   margin-bottom: 50px;
 }
@@ -310,7 +359,11 @@ button {
   }
 }
 
-/* Track any hashtag */
+/* 
+=================
+Track any hashtag
+=================
+*/
 #track-any-hashtag {
   padding: 40px 0px;
   background-color: var(--pest);
@@ -382,9 +435,155 @@ button {
   }
 }
 
-/* Grow your brand */
-#grow-your-brand {
+/* 
+===================
+Powering the growth
+===================
+*/
+#powering-the-growth {
   padding: 60px 0px;
+}
+#powering-the-growth .container {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 30px;
+}
+#powering-the-growth .content {
+  width: 100%;
+}
+#powering-the-growth .content h3 {
+  margin-bottom: 10px;
+}
+/* review */
+.reviews-wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  row-gap: 25px;
+}
+.reviews-wrap .review .start-wrap{
+  color: var(--orange);
+  display: flex;
+  align-items: end;
+  column-gap: 10px;
+}
+.review .start-wrap img{
+  width: 45px;
+}
+.reviews-wrap .review p{
+  font-style: italic;
+  margin: 10px 0px 15px 0px;
+}
+.review .person{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.review .person-img img{
+  height: 50px;
+  width: 50px;
+}
+.review .person h5{
+  color: var(--darkblue);
+}
+.review .person p{
+  font-style: normal;
+  margin: 5px 0px 0px 0px;
+}
+.shift-btn-wrap{
+  display: flex;
+  column-gap: 10px;
+}
+.shift-btn{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--darkblue);
+  background-color: var(--gray);
+}
+.shift-btn:hover{
+  color: var(--white);
+  background-color: var(--darkblue);
+}
+.reviews-wrap .visible{
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  #powering-the-growth {
+    padding: 110px 0px;
+  }
+  #powering-the-growth .container {
+    row-gap: 50px;
+  }
+  #powering-the-growth .content {
+    width: 445px;
+  }
+  #powering-the-growth .content h3 {
+    margin-bottom: 15px;
+  }
+  /* review */
+  .reviews-wrap {
+    width: 540px;
+    flex-flow: row wrap;
+    align-items: end;
+    justify-content: space-between;
+  }
+  .reviews-wrap .review{
+    width: 75%;
+  }
+  .reviews-wrap .review .start-wrap{
+    margin-left: -55px;
+  }
+  .review .start-wrap img{
+    width: 45px;
+  }
+  .reviews-wrap .review p{
+    margin: 15px 0px 20px 0px;
+  }
+  .review .person p{
+    margin: 5px 0px 0px 0px;
+  }
+  .reviews-wrap .visible{
+    display: flex;
+  }
+  .shift-btn-wrap{
+    display: none;
+  }
+  .shift-btn{
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #powering-the-growth {
+    padding: 170px 0px;
+  }
+  #powering-the-growth .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  #powering-the-growth .content h3 {
+    margin-bottom: 24px;
+  }
+  .shift-btn{
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/*
+===============
+Grow your brand
+===============
+*/
+#grow-your-brand {
+  padding-bottom: 60px;
 }
 #grow-your-brand .container {
   background: linear-gradient(
@@ -426,7 +625,7 @@ button {
 }
 @media only screen and (min-width: 768px) {
   #grow-your-brand {
-    padding: 110px 0px;
+    padding-bottom: 110px;
   }
   #grow-your-brand .container {
     padding: 40px 50px 40px 40px;
@@ -443,7 +642,7 @@ button {
 }
 @media only screen and (min-width: 1440px) {
   #grow-your-brand {
-    padding: 170px 0px;
+    padding-bottom: 170px;
   }
   #grow-your-brand .container {
     padding: 64px 91px 64px 71px;
@@ -452,7 +651,13 @@ button {
     margin-bottom: 25px 0px 15px 0px;
   }
 }
-/* footer */
+
+
+/*
+==========
+footer
+==========
+*/
 footer {
   background-color: var(--black);
   padding: 50px 0px;
@@ -556,5 +761,51 @@ footer .container ul li a {
   }
   .create-by-love .img-wrap img {
     width: 24px;
+  }
+}
+
+/* 
+=========== 
+Top Link 
+===========
+*/
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--clr-secondary);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+/* Show Link js */
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  .top-link {
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }

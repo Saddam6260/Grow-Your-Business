@@ -8,62 +8,68 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <!--  
-      <div class="container">
-
-        <navber>
-          <div class="main-logo">
-            <img src="./images/main-logo.png" alt="" />
-          </div>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Landings</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Docs</a></li>
-            <li><a href="">Help</a></li>
-            <button>
-              <a href="">Login</a>
-            </button>
-          </ul>
-        </navber>
-        
-        <main>
-          <div class="main-content">
-            <h1>
-              <span>We help you</span>
-              <span>grow your business</span>
-              <span>
-                faster
-                <img src="./images/main-content-vactor.png" alt="" />
-              </span>
-            </h1>
-            <p>
-              <span
-                >Ehya is the Instagram analytics platform teams use to
-                stay</span
-              >
-              <span
-                >focused on the goals, track engagement for report your</span
-              >
-              <span>business .</span>
-            </p>
-            <div class="main-btn-wrap">
-              <button class="common-button">
-                See how it works
-              </button>
-              <a href="">
-                <span>Get a free demo</span>
-                <span><i class="fa-solid fa-arrow-right-long"></i></span>
-              </a>
+    <!-- Header --> 
+    <header id="hone">
+      <navber class="navber">
+        <div class="navber-wrap container">
+          <div class="nav-heading">
+            <div class="main-logo">
+              <img src="./images/main-logo.png" alt="" />
             </div>
+            <button class="toggle-btn">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
           </div>
-          <div class="main-img">
-            <img src="./images/main-img.png" alt="" />
+          <div class="link-container">
+            <ul class="links">
+              <li><a href="">Home</a></li>
+              <li><a href="">Landings</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Docs</a></li>
+              <li><a href="">Help</a></li>
+              <button>
+                <a href="">Login</a>
+              </button>
+            </ul>
           </div>
-        </main>
-      </div>
-    </header> -->
+        </div>
+      </navber>
+        
+      <main class="container">
+        <div class="main-content">
+          <h1>
+            <span>We help you</span>
+            <span>grow your business</span>
+            <span>
+              faster
+              <img src="./images/main-content-vactor.pn" alt="" />
+            </span>
+          </h1>
+          <p>
+            <span
+              >Ehya is the Instagram analytics platform teams use to
+              stay</span
+            >
+            <span
+              >focused on the goals, track engagement for report your</span
+            >
+            <span>business .</span>
+          </p>
+          <div class="main-btn-wrap">
+            <button class="common-button">
+              See how it works
+            </button>
+            <a href="">
+              <span>Get a free demo</span>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="main-img">
+          <img src="./images/main-img.pn" alt="" />
+        </div>
+      </main>
+    </header>
 
     <!-- Web List -->
     <section id="web-list">
@@ -188,18 +194,19 @@
       <div class="container">
         <div class="content">
           <h3>
-            <span>Powering the growth of</span>
-            <span>100+ business & retailers</span>
-            <span>in Indonesia.</span>
+            Powering the growth of
+            100+ business & retailers
+            in Indonesia.
           </h3>
           <p>From single store, startups, to large multi-store brands.</p>
         </div>
-        <div class="card-wrap">
-          <button>
+        <div class="reviews-wrap">
+          <button class="left-shift visible shift-btn">
             <i class="fa-solid fa-angle-left"></i>
           </button>
-          <div class="card">
+          <div class="review">
             <div class="start-wrap">
+              <img src="./images/“.png" alt="">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -212,14 +219,24 @@
               with our audience.”
             </p>
             <div class="person">
-              <div class="person-img"></div>
+              <div class="person-img">
+                <img src="./images/person-1.png" alt="">
+              </div>
               <div class="person-name">
                 <h5>Jaquon Hart</h5>
                 <p>Digital Marketing Executive, Hypebeast</p>
               </div>
             </div>
           </div>
-          <button>
+          <div class="shift-btn-wrap">
+            <button class="left-shift shift-btn">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="right-shift shift-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+          <button class="right-shift visible shift-btn">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
@@ -235,7 +252,7 @@
             <span>presence on social</span>
             <span>media </span>
           </h3>
-          <p class="common-16">Join with more 1200+ happy customers</p>
+          <p>Join with more 1200+ happy customers</p>
           <div class="person-wrap">
             <img src="./images/persons-picture.png" alt="" />
             <a href="">and others</a>
@@ -316,6 +333,11 @@
         <p class="common-16">Copyright © 2021. Crafted with love.</p>
       </div>
     </footer>
+
+     <!-- Top Link -->
+     <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
 
     <!-- Font Awasome -->
     <script
