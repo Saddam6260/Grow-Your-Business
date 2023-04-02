@@ -174,7 +174,7 @@ header {
   min-height: 100vh;
 }
 .navber {
-  background-color: var(--darkblue);
+  background-color: var(--black);
   box-shadow: var(--light-shadow);
   padding: 15px 0px;
   width: 100%;
@@ -184,7 +184,7 @@ header {
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: var(--darkblue);
+  background-color: var(--black);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -242,7 +242,7 @@ header {
     padding: 25px 0px 25px 0px;
   }
   .fixed-nav {
-    background-color: var(--darkblue);
+    background-color: var(--black);
     box-shadow: var(--light-shadow);
   }
   .navber .container {
