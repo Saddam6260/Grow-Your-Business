@@ -33,6 +33,9 @@ Variable
 Global style
 ============
 */
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -171,7 +174,6 @@ Header
 */
 header {
   background-color: var(--darksky);
-  min-height: 100vh;
   position: relative;
 }
 .navber {
@@ -286,8 +288,8 @@ header {
 }
 /* Main */
 main{
-  width: 100vw;
-  min-height: 110vh;
+  /* width: 100vw; */
+  /* min-height: 110vh; */
   z-index: 1;
 }
 .main-overview{
